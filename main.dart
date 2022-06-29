@@ -1,16 +1,32 @@
 void main () {
    List<int> array = [1, 2, 3, 4];
+   List<int> array2 = [1, -2, 3, -4];
+   List<int> arrayp = [];
+   List<int> arrayn = [];
    redouble(array);
    print(array);
+   nums(array2, arrayp, arrayn);
+   print('$arrayp $arrayn');
+
 }
 
 List<int> redouble(List<int> brr) {   
-   for (int i=0; i< 4; i++){
+   for (int i=0; i< brr.length; i++){
       brr[i] = brr[i] * 2;
    }
    return brr;
 } 
 
+List<int> nums(List<int> brr, List<int> pos, List<int> neg) {
+   for (int i=0; i< brr.length; i++){
+      if (brr[i] > 0) {
+         pos.add(brr[i]);
+      } else {
+         neg.add(brr[i]);
+      }
+   }
+   return brr;
+}
 
 //#1
 // на вход приходит массив целых чисел и функция
