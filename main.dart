@@ -5,7 +5,7 @@ void main () {
    List<int> arrayn = [];
    String s = 'строка';
    print(redouble(array));
-   print(nums(array2, arrayp, arrayn));
+   nums(array2, arrayp, arrayn);
    print('$arrayp $arrayn');
    print(reverse(s));
 }
